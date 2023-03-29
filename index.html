@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="/assets/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+    </head>
+    <body>
+        <section class="container">
+            <h1>Matricula Aluno</h1>
+
+			<section class="container2">
+				<form action="post">
+					<fieldset>
+						<legend>Aluno</legend>
+
+						<div class="imp nmoea">
+							<label>Nome Completo:</label>
+							<input type="text" name="name" required id="" />
+						</div>
+						<div class="imp dataa">
+							<label>Data de Nascimento: </label>
+							<input type="date" name="date" required id="" />
+						</div>
+
+						<div class="imp rgr">
+							<label>RG:</label>
+							<input type="text" name="name-res" required maxlength="12" placeholder="00.000.000-0" id="" />
+						</div>
+
+						<div class="imp cella">
+							<label>Celular: </label>
+							<input type="tel" name="name" maxlength="11	" required id="" />
+						</div>
+
+						<label>Alguma deficiência?</label><br />
+						<input type="radio" name="deficiencia" required id="deficiencia-sim" value="sim" />
+						<label for="deficiencia-sim">Sim</label><br />
+						<input type="radio" name="deficiencia" required id="deficiencia-nao" value="nao" />
+						<label for="deficiencia-nao">Não</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Responsavel</legend>
+
+						<div class="imp nmoer">
+							<label>Nome Completo:</label>
+							<input type="text" required name="name-res" id="" />
+						</div>
+						<div class="imp datar">
+							<label>Data de Nascimento: </label>
+							<input type="date" required name="date-res" id="" />
+						</div>
+
+						<div class="imp rgr">
+							<label>RG:</label>
+							<input type="text" name="name-res" required maxlength="12" placeholder="00.000.000-0" id="" />
+						</div>
+
+						<div class="imp cellr">
+							<label>Celular: </label>
+							<input type="tel" required maxlength="11" name="name-res" id="" />
+						</div>
+					</fieldset>
+
+					<input type="checkbox" required name="termos" id="termos">
+					<label class="termos" for="">Eu decalro que li e aceito os <a href="">termos de uso</a>. </label>
+					<input type="submit" value="Enviar" />
+				</form>
+			</section>
+        </section>
+    </body>
+</html>
